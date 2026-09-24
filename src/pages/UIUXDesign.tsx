@@ -47,8 +47,8 @@ const designSystemColors = [
   { name: 'Secondary', value: '#1A1A2E', hex: '#1A1A2E' },
   { name: 'Accent', value: '#00D4A0', hex: '#00D4A0' },
   { name: 'Surface', value: '#0C0F1A', hex: '#0C0F1A' },
-  { name: 'Text', value: '#EDEEF2', hex: '#EDEEF2' },
-  { name: 'Muted', value: '#606476', hex: '#606476' },
+  { name: 'Text', value: 'var(--color-foreground)', hex: 'var(--color-foreground)' },
+  { name: 'Muted', value: 'var(--color-muted-foreground)', hex: 'var(--color-muted-foreground)' },
 ]
 
 const typographyScale = [
@@ -141,7 +141,7 @@ export default function UIUXDesign({ navigate }: { navigate: NavigateFn }) {
               fontSize: 'clamp(36px, 5vw, 68px)',
               fontWeight: 700,
               fontFamily: "'DM Sans', sans-serif",
-              color: '#EDEEF2',
+              color: 'var(--color-foreground)',
               letterSpacing: '-0.03em',
               lineHeight: 1.1,
               marginTop: '16px',
@@ -166,7 +166,7 @@ export default function UIUXDesign({ navigate }: { navigate: NavigateFn }) {
             className={`reveal reveal-delay-2 ${headerVisible ? 'visible' : ''}`}
             style={{
               fontSize: '18px',
-              color: '#9194A8',
+              color: 'var(--color-secondary-foreground)',
               lineHeight: '1.7',
               maxWidth: '600px',
             }}
@@ -191,7 +191,7 @@ export default function UIUXDesign({ navigate }: { navigate: NavigateFn }) {
                   fontSize: 'clamp(26px, 3vw, 40px)',
                   fontWeight: 700,
                   fontFamily: "'DM Sans', sans-serif",
-                  color: '#EDEEF2',
+                  color: 'var(--color-foreground)',
                   letterSpacing: '-0.03em',
                 }}
               >
@@ -242,7 +242,7 @@ export default function UIUXDesign({ navigate }: { navigate: NavigateFn }) {
                     style={{
                       fontSize: '16px',
                       fontWeight: 700,
-                      color: '#EDEEF2',
+                      color: 'var(--color-foreground)',
                       fontFamily: "'DM Sans', sans-serif",
                       marginBottom: '8px',
                       letterSpacing: '-0.01em',
@@ -250,7 +250,7 @@ export default function UIUXDesign({ navigate }: { navigate: NavigateFn }) {
                   >
                     {card.title}
                   </h3>
-                  <p style={{ fontSize: '13px', color: '#606476', lineHeight: '1.7' }}>
+                  <p style={{ fontSize: '13px', color: 'var(--color-muted-foreground)', lineHeight: '1.7' }}>
                     {card.desc}
                   </p>
                 </div>
@@ -282,7 +282,7 @@ export default function UIUXDesign({ navigate }: { navigate: NavigateFn }) {
                   fontSize: 'clamp(26px, 3vw, 40px)',
                   fontWeight: 700,
                   fontFamily: "'DM Sans', sans-serif",
-                  color: '#EDEEF2',
+                  color: 'var(--color-foreground)',
                   letterSpacing: '-0.03em',
                   marginTop: '16px',
                 }}
@@ -345,7 +345,7 @@ export default function UIUXDesign({ navigate }: { navigate: NavigateFn }) {
                         style={{
                           fontSize: '17px',
                           fontWeight: 700,
-                          color: '#EDEEF2',
+                          color: 'var(--color-foreground)',
                           fontFamily: "'DM Sans', sans-serif",
                           letterSpacing: '-0.01em',
                         }}
@@ -353,7 +353,7 @@ export default function UIUXDesign({ navigate }: { navigate: NavigateFn }) {
                         {step.title}
                       </h3>
                     </div>
-                    <p style={{ fontSize: '14px', color: '#606476', lineHeight: '1.65' }}>
+                    <p style={{ fontSize: '14px', color: 'var(--color-muted-foreground)', lineHeight: '1.65' }}>
                       {step.desc}
                     </p>
                   </div>
@@ -380,7 +380,7 @@ export default function UIUXDesign({ navigate }: { navigate: NavigateFn }) {
                   fontSize: 'clamp(26px, 3vw, 40px)',
                   fontWeight: 700,
                   fontFamily: "'DM Sans', sans-serif",
-                  color: '#EDEEF2',
+                  color: 'var(--color-foreground)',
                   letterSpacing: '-0.03em',
                   marginTop: '16px',
                 }}
@@ -407,7 +407,7 @@ export default function UIUXDesign({ navigate }: { navigate: NavigateFn }) {
                 style={{
                   fontFamily: "'JetBrains Mono', monospace",
                   fontSize: '11px',
-                  color: '#606476',
+                  color: 'var(--color-muted-foreground)',
                   letterSpacing: '0.08em',
                   textTransform: 'uppercase',
                   marginBottom: '20px',
@@ -449,7 +449,7 @@ export default function UIUXDesign({ navigate }: { navigate: NavigateFn }) {
                         style={{
                           fontSize: '12px',
                           fontWeight: 600,
-                          color: '#EDEEF2',
+                          color: 'var(--color-foreground)',
                           fontFamily: "'DM Sans', sans-serif",
                         }}
                       >
@@ -458,7 +458,7 @@ export default function UIUXDesign({ navigate }: { navigate: NavigateFn }) {
                       <div
                         style={{
                           fontSize: '10px',
-                          color: '#606476',
+                          color: 'var(--color-muted-foreground)',
                           fontFamily: "'JetBrains Mono', monospace",
                           marginTop: '2px',
                         }}
@@ -480,7 +480,7 @@ export default function UIUXDesign({ navigate }: { navigate: NavigateFn }) {
                 style={{
                   fontFamily: "'JetBrains Mono', monospace",
                   fontSize: '11px',
-                  color: '#606476',
+                  color: 'var(--color-muted-foreground)',
                   letterSpacing: '0.08em',
                   textTransform: 'uppercase',
                   marginBottom: '20px',
@@ -520,7 +520,7 @@ export default function UIUXDesign({ navigate }: { navigate: NavigateFn }) {
                         style={{
                           fontSize: '11px',
                           fontFamily: "'JetBrains Mono', monospace",
-                          color: '#606476',
+                          color: 'var(--color-muted-foreground)',
                         }}
                       >
                         {type.name}
@@ -544,7 +544,7 @@ export default function UIUXDesign({ navigate }: { navigate: NavigateFn }) {
                           type.font === 'JetBrains Mono'
                             ? "'JetBrains Mono', monospace"
                             : "'DM Sans', sans-serif",
-                        color: '#EDEEF2',
+                        color: 'var(--color-foreground)',
                         lineHeight: 1.2,
                         overflow: 'hidden',
                         whiteSpace: 'nowrap',
@@ -568,7 +568,7 @@ export default function UIUXDesign({ navigate }: { navigate: NavigateFn }) {
                 style={{
                   fontFamily: "'JetBrains Mono', monospace",
                   fontSize: '11px',
-                  color: '#606476',
+                  color: 'var(--color-muted-foreground)',
                   letterSpacing: '0.08em',
                   textTransform: 'uppercase',
                   marginBottom: '20px',
@@ -616,7 +616,7 @@ export default function UIUXDesign({ navigate }: { navigate: NavigateFn }) {
                     display: 'block',
                     fontSize: '13px',
                     fontWeight: 500,
-                    color: '#9194A8',
+                    color: 'var(--color-secondary-foreground)',
                     fontFamily: "'DM Sans', sans-serif",
                     marginBottom: '8px',
                   }}
@@ -631,7 +631,7 @@ export default function UIUXDesign({ navigate }: { navigate: NavigateFn }) {
                     background: 'rgba(255,255,255,0.04)',
                     border: '1px solid rgba(255,255,255,0.1)',
                     borderRadius: '10px',
-                    color: '#EDEEF2',
+                    color: 'var(--color-foreground)',
                     fontSize: '15px',
                     fontFamily: "'DM Sans', sans-serif",
                     outline: 'none',
@@ -664,14 +664,14 @@ export default function UIUXDesign({ navigate }: { navigate: NavigateFn }) {
               fontSize: 'clamp(24px, 3vw, 36px)',
               fontWeight: 700,
               fontFamily: "'DM Sans', sans-serif",
-              color: '#EDEEF2',
+              color: 'var(--color-foreground)',
               letterSpacing: '-0.02em',
               marginBottom: '16px',
             }}
           >
             Need a design that converts?
           </h2>
-          <p style={{ fontSize: '16px', color: '#606476', marginBottom: '28px' }}>
+          <p style={{ fontSize: '16px', color: 'var(--color-muted-foreground)', marginBottom: '28px' }}>
             From wireframes to production-ready designs — let's build something users love.
           </p>
           <div className="btn-stack-mobile" style={{ display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap' }}>

@@ -67,7 +67,7 @@ export default function Contact({ navigate: _navigate }: { navigate: NavigateFn 
     background: 'rgba(255,255,255,0.04)',
     border: '1px solid rgba(255,255,255,0.08)',
     borderRadius: '10px',
-    color: '#EDEEF2',
+    color: 'var(--color-foreground)',
     fontSize: '15px',
     fontFamily: "'DM Sans', sans-serif",
     outline: 'none',
@@ -79,7 +79,7 @@ export default function Contact({ navigate: _navigate }: { navigate: NavigateFn 
     display: 'block',
     fontSize: '13px',
     fontWeight: 500,
-    color: '#9194A8',
+    color: 'var(--color-secondary-foreground)',
     fontFamily: "'DM Sans', sans-serif",
     marginBottom: '8px',
   }
@@ -125,7 +125,7 @@ export default function Contact({ navigate: _navigate }: { navigate: NavigateFn 
               fontSize: 'clamp(32px, 4.5vw, 60px)',
               fontWeight: 700,
               fontFamily: "'DM Sans', sans-serif",
-              color: '#EDEEF2',
+              color: 'var(--color-foreground)',
               letterSpacing: '-0.03em',
               lineHeight: 1.1,
               marginTop: '16px',
@@ -149,7 +149,7 @@ export default function Contact({ navigate: _navigate }: { navigate: NavigateFn 
             className={`reveal reveal-delay-2 ${headerVisible ? 'visible' : ''}`}
             style={{
               fontSize: '17px',
-              color: '#9194A8',
+              color: 'var(--color-secondary-foreground)',
               lineHeight: '1.7',
               maxWidth: '520px',
             }}
@@ -240,7 +240,7 @@ export default function Contact({ navigate: _navigate }: { navigate: NavigateFn 
                     style={{
                       fontSize: '22px',
                       fontWeight: 700,
-                      color: '#EDEEF2',
+                      color: 'var(--color-foreground)',
                       fontFamily: "'DM Sans', sans-serif",
                       marginBottom: '10px',
                     }}
@@ -250,7 +250,7 @@ export default function Contact({ navigate: _navigate }: { navigate: NavigateFn 
                   <p
                     style={{
                       fontSize: '15px',
-                      color: '#9194A8',
+                      color: 'var(--color-secondary-foreground)',
                       lineHeight: '1.7',
                     }}
                   >
@@ -272,7 +272,7 @@ export default function Contact({ navigate: _navigate }: { navigate: NavigateFn 
                     style={{
                       fontSize: '22px',
                       fontWeight: 700,
-                      color: '#EDEEF2',
+                      color: 'var(--color-foreground)',
                       fontFamily: "'DM Sans', sans-serif",
                       letterSpacing: '-0.02em',
                       marginBottom: '28px',
@@ -330,7 +330,7 @@ export default function Contact({ navigate: _navigate }: { navigate: NavigateFn 
                       style={{
                         ...inputStyle,
                         cursor: 'pointer',
-                        color: form.projectType ? '#EDEEF2' : '#606476',
+                        color: form.projectType ? 'var(--color-foreground)' : 'var(--color-muted-foreground)',
                       }}
                     >
                       <option value="" disabled style={{ background: '#0C0F1A' }}>
@@ -364,7 +364,7 @@ export default function Contact({ navigate: _navigate }: { navigate: NavigateFn 
                               form.budget === b
                                 ? '1px solid rgba(124,92,252,0.4)'
                                 : '1px solid rgba(255,255,255,0.08)',
-                            color: form.budget === b ? '#A78BFA' : '#9194A8',
+                            color: form.budget === b ? '#A78BFA' : 'var(--color-secondary-foreground)',
                             fontSize: '13px',
                             fontFamily: "'DM Sans', sans-serif",
                             fontWeight: 500,
@@ -436,7 +436,7 @@ export default function Contact({ navigate: _navigate }: { navigate: NavigateFn 
                 style={{
                   fontSize: '16px',
                   fontWeight: 700,
-                  color: '#EDEEF2',
+                  color: 'var(--color-foreground)',
                   fontFamily: "'DM Sans', sans-serif",
                   marginBottom: '16px',
                   letterSpacing: '-0.01em',
@@ -466,7 +466,7 @@ export default function Contact({ navigate: _navigate }: { navigate: NavigateFn 
                     <div
                       style={{
                         fontSize: '12px',
-                        color: '#606476',
+                        color: 'var(--color-muted-foreground)',
                         fontFamily: "'JetBrains Mono', monospace",
                         marginBottom: '2px',
                       }}
@@ -478,7 +478,7 @@ export default function Contact({ navigate: _navigate }: { navigate: NavigateFn 
                       style={{
                         fontSize: '14px',
                         fontWeight: 500,
-                        color: '#EDEEF2',
+                        color: 'var(--color-foreground)',
                         fontFamily: "'DM Sans', sans-serif",
                         textDecoration: 'none',
                         transition: 'color 0.2s ease',
@@ -487,7 +487,7 @@ export default function Contact({ navigate: _navigate }: { navigate: NavigateFn 
                         ((e.currentTarget as HTMLAnchorElement).style.color = '#A78BFA')
                       }
                       onMouseLeave={(e) =>
-                        ((e.currentTarget as HTMLAnchorElement).style.color = '#EDEEF2')
+                        ((e.currentTarget as HTMLAnchorElement).style.color = 'var(--color-foreground)')
                       }
                     >
                       harisafaq22@gmail.com
@@ -515,7 +515,7 @@ export default function Contact({ navigate: _navigate }: { navigate: NavigateFn 
                     <div
                       style={{
                         fontSize: '12px',
-                        color: '#606476',
+                        color: 'var(--color-muted-foreground)',
                         fontFamily: "'JetBrains Mono', monospace",
                         marginBottom: '2px',
                       }}
@@ -526,7 +526,7 @@ export default function Contact({ navigate: _navigate }: { navigate: NavigateFn 
                       style={{
                         fontSize: '14px',
                         fontWeight: 500,
-                        color: '#EDEEF2',
+                        color: 'var(--color-foreground)',
                         fontFamily: "'DM Sans', sans-serif",
                       }}
                     >
@@ -543,7 +543,7 @@ export default function Contact({ navigate: _navigate }: { navigate: NavigateFn 
                 style={{
                   fontSize: '16px',
                   fontWeight: 700,
-                  color: '#EDEEF2',
+                  color: 'var(--color-foreground)',
                   fontFamily: "'DM Sans', sans-serif",
                   marginBottom: '16px',
                   letterSpacing: '-0.01em',
@@ -598,13 +598,13 @@ export default function Contact({ navigate: _navigate }: { navigate: NavigateFn 
                       style={{
                         fontSize: '14px',
                         fontWeight: 500,
-                        color: '#EDEEF2',
+                        color: 'var(--color-foreground)',
                         fontFamily: "'DM Sans', sans-serif",
                       }}
                     >
                       {s.name}
                     </span>
-                    <span style={{ marginLeft: 'auto', color: '#606476', fontSize: '12px' }}>
+                    <span style={{ marginLeft: 'auto', color: 'var(--color-muted-foreground)', fontSize: '12px' }}>
                       →
                     </span>
                   </a>
@@ -618,7 +618,7 @@ export default function Contact({ navigate: _navigate }: { navigate: NavigateFn 
                 style={{
                   fontSize: '16px',
                   fontWeight: 700,
-                  color: '#EDEEF2',
+                  color: 'var(--color-foreground)',
                   fontFamily: "'DM Sans', sans-serif",
                   marginBottom: '12px',
                   letterSpacing: '-0.01em',
@@ -643,7 +643,7 @@ export default function Contact({ navigate: _navigate }: { navigate: NavigateFn 
                     <span
                       style={{
                         fontSize: '13px',
-                        color: '#606476',
+                        color: 'var(--color-muted-foreground)',
                         fontFamily: "'JetBrains Mono', monospace",
                         whiteSpace: 'nowrap',
                       }}
@@ -653,7 +653,7 @@ export default function Contact({ navigate: _navigate }: { navigate: NavigateFn 
                     <span
                       style={{
                         fontSize: '13px',
-                        color: '#9194A8',
+                        color: 'var(--color-secondary-foreground)',
                         fontFamily: "'DM Sans', sans-serif",
                         textAlign: 'right',
                       }}

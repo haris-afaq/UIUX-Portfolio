@@ -39,7 +39,7 @@ export default function Work({ navigate }: { navigate: NavigateFn }) {
                 fontSize: 'clamp(36px, 5vw, 64px)',
                 fontWeight: 700,
                 fontFamily: "'DM Sans', sans-serif",
-                color: '#EDEEF2',
+                color: 'var(--color-foreground)',
                 letterSpacing: '-0.03em',
                 lineHeight: 1.1,
               }}
@@ -59,7 +59,7 @@ export default function Work({ navigate }: { navigate: NavigateFn }) {
             <p
               style={{
                 fontSize: '16px',
-                color: '#606476',
+                color: 'var(--color-muted-foreground)',
                 maxWidth: '400px',
                 lineHeight: '1.7',
               }}
@@ -91,7 +91,7 @@ export default function Work({ navigate }: { navigate: NavigateFn }) {
                     activeCategory === cat
                       ? '1px solid #7C5CFC'
                       : '1px solid rgba(255,255,255,0.08)',
-                  color: activeCategory === cat ? '#FFFFFF' : '#9194A8',
+                  color: activeCategory === cat ? '#FFFFFF' : 'var(--color-secondary-foreground)',
                   fontSize: '13px',
                   fontFamily: "'DM Sans', sans-serif",
                   fontWeight: 500,
@@ -102,14 +102,14 @@ export default function Work({ navigate }: { navigate: NavigateFn }) {
                   if (activeCategory !== cat) {
                     ;(e.currentTarget as HTMLButtonElement).style.borderColor =
                       'rgba(124,92,252,0.3)'
-                    ;(e.currentTarget as HTMLButtonElement).style.color = '#EDEEF2'
+                    ;(e.currentTarget as HTMLButtonElement).style.color = 'var(--color-foreground)'
                   }
                 }}
                 onMouseLeave={(e) => {
                   if (activeCategory !== cat) {
                     ;(e.currentTarget as HTMLButtonElement).style.borderColor =
                       'rgba(255,255,255,0.08)'
-                    ;(e.currentTarget as HTMLButtonElement).style.color = '#9194A8'
+                    ;(e.currentTarget as HTMLButtonElement).style.color = 'var(--color-secondary-foreground)'
                   }
                 }}
               >
@@ -255,7 +255,7 @@ export default function Work({ navigate }: { navigate: NavigateFn }) {
                       style={{
                         fontSize: '19px',
                         fontWeight: 700,
-                        color: '#EDEEF2',
+                        color: 'var(--color-foreground)',
                         fontFamily: "'DM Sans', sans-serif",
                         letterSpacing: '-0.02em',
                       }}
@@ -266,7 +266,7 @@ export default function Work({ navigate }: { navigate: NavigateFn }) {
                       style={{
                         fontFamily: "'JetBrains Mono', monospace",
                         fontSize: '11px',
-                        color: '#606476',
+                        color: 'var(--color-muted-foreground)',
                       }}
                     >
                       {project.year}
@@ -275,7 +275,7 @@ export default function Work({ navigate }: { navigate: NavigateFn }) {
                   <p
                     style={{
                       fontSize: '14px',
-                      color: '#606476',
+                      color: 'var(--color-muted-foreground)',
                       lineHeight: '1.65',
                       marginBottom: '16px',
                     }}
@@ -333,7 +333,7 @@ export default function Work({ navigate }: { navigate: NavigateFn }) {
           </div>
 
           {filtered.length === 0 && (
-            <div style={{ textAlign: 'center', padding: '48px 0', color: '#606476' }}>
+            <div style={{ textAlign: 'center', padding: '48px 0', color: 'var(--color-muted-foreground)' }}>
               <div style={{ fontSize: '32px', marginBottom: '16px' }}>◎</div>
               <p style={{ fontFamily: "'DM Sans', sans-serif" }}>No projects in this category yet.</p>
             </div>
@@ -353,14 +353,14 @@ export default function Work({ navigate }: { navigate: NavigateFn }) {
               fontSize: 'clamp(24px, 3vw, 36px)',
               fontWeight: 700,
               fontFamily: "'DM Sans', sans-serif",
-              color: '#EDEEF2',
+              color: 'var(--color-foreground)',
               letterSpacing: '-0.02em',
               marginBottom: '16px',
             }}
           >
             Want to add your project to this list?
           </h2>
-          <p style={{ fontSize: '16px', color: '#606476', marginBottom: '28px' }}>
+          <p style={{ fontSize: '16px', color: 'var(--color-muted-foreground)', marginBottom: '28px' }}>
             I'm currently open for freelance UI/UX design projects.
           </p>
           <button className="btn-primary" onClick={() => navigate('contact')}>

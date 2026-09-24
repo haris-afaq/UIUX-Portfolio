@@ -99,7 +99,7 @@ function HeroVisual() {
             style={{
               fontFamily: "'JetBrains Mono', monospace",
               fontSize: '10px',
-              color: '#606476',
+              color: 'var(--color-muted-foreground)',
               letterSpacing: '0.1em',
               textTransform: 'uppercase',
             }}
@@ -174,7 +174,7 @@ function HeroVisual() {
                 style={{
                   fontSize: '18px',
                   fontWeight: 700,
-                  color: '#EDEEF2',
+                  color: 'var(--color-foreground)',
                   lineHeight: 1,
                   fontFamily: "'DM Sans', sans-serif",
                 }}
@@ -184,7 +184,7 @@ function HeroVisual() {
               <div
                 style={{
                   fontSize: '10px',
-                  color: '#606476',
+                  color: 'var(--color-muted-foreground)',
                   marginTop: '3px',
                   fontFamily: "'JetBrains Mono', monospace",
                   letterSpacing: '0.06em',
@@ -350,7 +350,7 @@ export default function Home({ navigate }: { navigate: NavigateFn }) {
                 lineHeight: '1.05',
                 fontFamily: "'DM Sans', sans-serif",
                 fontWeight: 700,
-                color: '#EDEEF2',
+                color: 'var(--color-foreground)',
                 marginBottom: '16px',
                 letterSpacing: '-0.03em',
               }}
@@ -391,7 +391,7 @@ export default function Home({ navigate }: { navigate: NavigateFn }) {
               style={{
                 animationDelay: '0.2s',
                 fontSize: '18px',
-                color: '#9194A8',
+                color: 'var(--color-secondary-foreground)',
                 marginBottom: '16px',
                 fontFamily: "'DM Sans', sans-serif",
                 minHeight: '28px',
@@ -408,7 +408,7 @@ export default function Home({ navigate }: { navigate: NavigateFn }) {
                 animationDelay: '0.25s',
                 fontSize: '16px',
                 lineHeight: '1.7',
-                color: '#606476',
+                color: 'var(--color-muted-foreground)',
                 marginBottom: '40px',
                 maxWidth: '480px',
               }}
@@ -457,7 +457,7 @@ export default function Home({ navigate }: { navigate: NavigateFn }) {
                   key={s.label}
                   href={s.href}
                   style={{
-                    color: '#606476',
+                    color: 'var(--color-muted-foreground)',
                     fontSize: '13px',
                     fontFamily: "'JetBrains Mono', monospace",
                     textDecoration: 'none',
@@ -468,7 +468,7 @@ export default function Home({ navigate }: { navigate: NavigateFn }) {
                     ((e.currentTarget as HTMLAnchorElement).style.color = '#A78BFA')
                   }
                   onMouseLeave={(e) =>
-                    ((e.currentTarget as HTMLAnchorElement).style.color = '#606476')
+                    ((e.currentTarget as HTMLAnchorElement).style.color = 'var(--color-muted-foreground)')
                   }
                 >
                   {s.label}
@@ -505,7 +505,7 @@ export default function Home({ navigate }: { navigate: NavigateFn }) {
             style={{
               fontSize: '10px',
               fontFamily: "'JetBrains Mono', monospace",
-              color: '#606476',
+              color: 'var(--color-muted-foreground)',
               letterSpacing: '0.12em',
               textTransform: 'uppercase',
             }}
@@ -551,7 +551,7 @@ export default function Home({ navigate }: { navigate: NavigateFn }) {
                   fontSize: 'clamp(32px, 4vw, 52px)',
                   fontWeight: 700,
                   fontFamily: "'DM Sans', sans-serif",
-                  color: '#EDEEF2',
+                  color: 'var(--color-foreground)',
                   letterSpacing: '-0.03em',
                   lineHeight: 1.1,
                 }}
@@ -671,7 +671,7 @@ export default function Home({ navigate }: { navigate: NavigateFn }) {
                       style={{
                         fontSize: '18px',
                         fontWeight: 700,
-                        color: '#EDEEF2',
+                        color: 'var(--color-foreground)',
                         fontFamily: "'DM Sans', sans-serif",
                         letterSpacing: '-0.02em',
                       }}
@@ -680,7 +680,7 @@ export default function Home({ navigate }: { navigate: NavigateFn }) {
                     </h3>
                     <span
                       style={{
-                        color: '#606476',
+                        color: 'var(--color-muted-foreground)',
                         fontFamily: "'JetBrains Mono', monospace",
                         fontSize: '11px',
                       }}
@@ -691,7 +691,7 @@ export default function Home({ navigate }: { navigate: NavigateFn }) {
                   <p
                     style={{
                       fontSize: '14px',
-                      color: '#606476',
+                      color: 'var(--color-muted-foreground)',
                       lineHeight: '1.65',
                       marginBottom: '16px',
                     }}
@@ -734,7 +734,7 @@ export default function Home({ navigate }: { navigate: NavigateFn }) {
                   fontSize: 'clamp(28px, 3.5vw, 44px)',
                   fontWeight: 700,
                   fontFamily: "'DM Sans', sans-serif",
-                  color: '#EDEEF2',
+                  color: 'var(--color-foreground)',
                   letterSpacing: '-0.03em',
                   marginTop: '16px',
                   lineHeight: 1.15,
@@ -830,7 +830,7 @@ export default function Home({ navigate }: { navigate: NavigateFn }) {
                     style={{
                       fontSize: '17px',
                       fontWeight: 700,
-                      color: '#EDEEF2',
+                      color: 'var(--color-foreground)',
                       fontFamily: "'DM Sans', sans-serif",
                       marginBottom: '10px',
                       letterSpacing: '-0.01em',
@@ -839,7 +839,7 @@ export default function Home({ navigate }: { navigate: NavigateFn }) {
                     {step.title}
                   </h3>
                   <p
-                    style={{ fontSize: '13px', color: '#606476', lineHeight: '1.65' }}
+                    style={{ fontSize: '13px', color: 'var(--color-muted-foreground)', lineHeight: '1.65' }}
                   >
                     {step.desc}
                   </p>
@@ -866,7 +866,7 @@ export default function Home({ navigate }: { navigate: NavigateFn }) {
                   fontSize: 'clamp(26px, 3vw, 40px)',
                   fontWeight: 700,
                   fontFamily: "'DM Sans', sans-serif",
-                  color: '#EDEEF2',
+                  color: 'var(--color-foreground)',
                   letterSpacing: '-0.03em',
                   marginTop: '16px',
                   lineHeight: 1.2,
@@ -919,7 +919,7 @@ export default function Home({ navigate }: { navigate: NavigateFn }) {
                     style={{
                       fontSize: '13px',
                       fontWeight: 500,
-                      color: '#EDEEF2',
+                      color: 'var(--color-foreground)',
                       fontFamily: "'DM Sans', sans-serif",
                     }}
                   >
@@ -969,7 +969,7 @@ export default function Home({ navigate }: { navigate: NavigateFn }) {
                 fontSize: 'clamp(30px, 4vw, 56px)',
                 fontWeight: 700,
                 fontFamily: "'DM Sans', sans-serif",
-                color: '#EDEEF2',
+                color: 'var(--color-foreground)',
                 letterSpacing: '-0.03em',
                 lineHeight: 1.1,
                 marginBottom: '20px',
@@ -992,7 +992,7 @@ export default function Home({ navigate }: { navigate: NavigateFn }) {
             <p
               style={{
                 fontSize: '17px',
-                color: '#606476',
+                color: 'var(--color-muted-foreground)',
                 lineHeight: '1.7',
                 maxWidth: '560px',
                 margin: '0 auto 40px',
@@ -1047,7 +1047,7 @@ export default function Home({ navigate }: { navigate: NavigateFn }) {
             style={{
               fontFamily: "'JetBrains Mono', monospace",
               fontSize: '12px',
-              color: '#606476',
+              color: 'var(--color-muted-foreground)',
             }}
           >
             © 2026 Maryam Tauheed · UI/UX Design
@@ -1060,7 +1060,7 @@ export default function Home({ navigate }: { navigate: NavigateFn }) {
                 style={{
                   fontSize: '12px',
                   fontFamily: "'JetBrains Mono', monospace",
-                  color: '#606476',
+                  color: 'var(--color-muted-foreground)',
                   textDecoration: 'none',
                   transition: 'color 0.2s ease',
                 }}
@@ -1068,7 +1068,7 @@ export default function Home({ navigate }: { navigate: NavigateFn }) {
                   ((e.currentTarget as HTMLAnchorElement).style.color = '#A78BFA')
                 }
                 onMouseLeave={(e) =>
-                  ((e.currentTarget as HTMLAnchorElement).style.color = '#606476')
+                  ((e.currentTarget as HTMLAnchorElement).style.color = 'var(--color-muted-foreground)')
                 }
               >
                 {s}

@@ -98,7 +98,7 @@ function SkillBar({ skill, visible }: { skill: typeof skills[0]; visible: boolea
             style={{
               fontSize: '14px',
               fontWeight: 500,
-              color: '#EDEEF2',
+              color: 'var(--color-foreground)',
               fontFamily: "'DM Sans', sans-serif",
             }}
           >
@@ -109,7 +109,7 @@ function SkillBar({ skill, visible }: { skill: typeof skills[0]; visible: boolea
           style={{
             fontSize: '12px',
             fontFamily: "'JetBrains Mono', monospace",
-            color: '#606476',
+            color: 'var(--color-muted-foreground)',
           }}
         >
           {skill.level}%
@@ -187,7 +187,7 @@ export default function About({ navigate }: { navigate: NavigateFn }) {
                   fontSize: 'clamp(36px, 4.5vw, 60px)',
                   fontWeight: 700,
                   fontFamily: "'DM Sans', sans-serif",
-                  color: '#EDEEF2',
+                  color: 'var(--color-foreground)',
                   letterSpacing: '-0.03em',
                   lineHeight: 1.1,
                   marginTop: '16px',
@@ -211,7 +211,7 @@ export default function About({ navigate }: { navigate: NavigateFn }) {
                 style={{
                   fontSize: '17px',
                   lineHeight: '1.75',
-                  color: '#9194A8',
+                  color: 'var(--color-secondary-foreground)',
                   marginBottom: '20px',
                 }}
               >
@@ -224,7 +224,7 @@ export default function About({ navigate }: { navigate: NavigateFn }) {
                 style={{
                   fontSize: '17px',
                   lineHeight: '1.75',
-                  color: '#9194A8',
+                  color: 'var(--color-secondary-foreground)',
                   marginBottom: '36px',
                 }}
               >
@@ -282,7 +282,7 @@ export default function About({ navigate }: { navigate: NavigateFn }) {
                     style={{
                       fontSize: '16px',
                       fontWeight: 700,
-                      color: '#EDEEF2',
+                      color: 'var(--color-foreground)',
                       fontFamily: "'DM Sans', sans-serif",
                       marginBottom: '4px',
                     }}
@@ -292,7 +292,7 @@ export default function About({ navigate }: { navigate: NavigateFn }) {
                   <div
                     style={{
                       fontSize: '12px',
-                      color: '#9194A8',
+                      color: 'var(--color-secondary-foreground)',
                       fontFamily: "'JetBrains Mono', monospace",
                       marginBottom: '12px',
                     }}
@@ -328,7 +328,7 @@ export default function About({ navigate }: { navigate: NavigateFn }) {
                         <div
                           style={{
                             fontSize: '10px',
-                            color: '#606476',
+                            color: 'var(--color-muted-foreground)',
                             fontFamily: "'JetBrains Mono', monospace",
                             letterSpacing: '0.05em',
                           }}
@@ -401,7 +401,7 @@ export default function About({ navigate }: { navigate: NavigateFn }) {
                   fontSize: 'clamp(26px, 3vw, 40px)',
                   fontWeight: 700,
                   fontFamily: "'DM Sans', sans-serif",
-                  color: '#EDEEF2',
+                  color: 'var(--color-foreground)',
                   letterSpacing: '-0.03em',
                   marginTop: '16px',
                 }}
@@ -483,7 +483,7 @@ export default function About({ navigate }: { navigate: NavigateFn }) {
                 //   fontSize: 'clamp(26px, 3vw, 40px)',
                 //   fontWeight: 700,
                 //   fontFamily: "'DM Sans', sans-serif",
-                //   color: '#EDEEF2',
+                //   color: 'var(--color-foreground)',
                 //   letterSpacing: '-0.03em',
                 //   marginTop: '16px',
                 // }}
@@ -589,7 +589,7 @@ export default function About({ navigate }: { navigate: NavigateFn }) {
                           style={{
                             fontSize: '16px',
                             fontWeight: 700,
-                            color: '#EDEEF2',
+                            color: 'var(--color-foreground)',
                             fontFamily: "'DM Sans', sans-serif",
                             letterSpacing: '-0.01em',
                           }}
@@ -599,7 +599,7 @@ export default function About({ navigate }: { navigate: NavigateFn }) {
                         <span
                           style={{
                             fontSize: '12px',
-                            color: '#9194A8',
+                            color: 'var(--color-secondary-foreground)',
                             fontFamily: "'JetBrains Mono', monospace",
                             whiteSpace: 'nowrap',
                           }}
@@ -610,7 +610,7 @@ export default function About({ navigate }: { navigate: NavigateFn }) {
                       <p
                         style={{
                           fontSize: '14px',
-                          color: '#606476',
+                          color: 'var(--color-muted-foreground)',
                           lineHeight: '1.65',
                           marginBottom: '14px',
                         }}
@@ -657,7 +657,7 @@ export default function About({ navigate }: { navigate: NavigateFn }) {
                   fontSize: 'clamp(26px, 3vw, 40px)',
                   fontWeight: 700,
                   fontFamily: "'DM Sans', sans-serif",
-                  color: '#EDEEF2',
+                  color: 'var(--color-foreground)',
                   letterSpacing: '-0.03em',
                   marginTop: '16px',
                 }}
@@ -709,7 +709,7 @@ export default function About({ navigate }: { navigate: NavigateFn }) {
                     style={{
                       fontSize: '17px',
                       fontWeight: 700,
-                      color: '#EDEEF2',
+                      color: 'var(--color-foreground)',
                       fontFamily: "'DM Sans', sans-serif",
                       letterSpacing: '-0.01em',
                       marginBottom: '10px',
@@ -717,7 +717,7 @@ export default function About({ navigate }: { navigate: NavigateFn }) {
                   >
                     {v.title}
                   </h3>
-                  <p style={{ fontSize: '14px', color: '#606476', lineHeight: '1.7' }}>
+                  <p style={{ fontSize: '14px', color: 'var(--color-muted-foreground)', lineHeight: '1.7' }}>
                     {v.desc}
                   </p>
                 </div>
@@ -733,7 +733,7 @@ export default function About({ navigate }: { navigate: NavigateFn }) {
           <p
             style={{
               fontSize: '18px',
-              color: '#9194A8',
+              color: 'var(--color-secondary-foreground)',
               marginBottom: '28px',
               fontFamily: "'Instrument Serif', Georgia, serif",
               fontStyle: 'italic',

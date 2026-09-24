@@ -94,7 +94,7 @@ export default function Nav({ currentPage, navigate, darkMode, toggleDark }: Nav
           <div>
             <span
               style={{
-                color: '#EDEEF2',
+                color: 'var(--color-foreground)',
                 fontWeight: 600,
                 fontSize: '15px',
                 fontFamily: "'DM Sans', sans-serif",
@@ -106,7 +106,7 @@ export default function Nav({ currentPage, navigate, darkMode, toggleDark }: Nav
             </span>
             <span
               style={{
-                color: '#606476',
+                color: 'var(--color-muted-foreground)',
                 fontSize: '11px',
                 fontFamily: "'JetBrains Mono', monospace",
                 letterSpacing: '0.05em',
@@ -114,7 +114,7 @@ export default function Nav({ currentPage, navigate, darkMode, toggleDark }: Nav
                 marginTop: '2px',
               }}
             >
-              UI/UX Designer
+              UI/UX PORTFOLIO
             </span>
           </div>
         </button>
@@ -137,7 +137,7 @@ export default function Nav({ currentPage, navigate, darkMode, toggleDark }: Nav
                 border: isActive(link.page)
                   ? '1px solid rgba(124, 92, 252, 0.25)'
                   : '1px solid transparent',
-                color: isActive(link.page) ? '#A78BFA' : '#9194A8',
+                color: isActive(link.page) ? '#A78BFA' : 'var(--color-secondary-foreground)',
                 fontSize: '14px',
                 fontFamily: "'DM Sans', sans-serif",
                 fontWeight: 500,
@@ -147,14 +147,14 @@ export default function Nav({ currentPage, navigate, darkMode, toggleDark }: Nav
               }}
               onMouseEnter={(e) => {
                 if (!isActive(link.page)) {
-                  ;(e.currentTarget as HTMLButtonElement).style.color = '#EDEEF2'
+                  ;(e.currentTarget as HTMLButtonElement).style.color = 'var(--color-foreground)'
                   ;(e.currentTarget as HTMLButtonElement).style.background =
                     'rgba(255,255,255,0.05)'
                 }
               }}
               onMouseLeave={(e) => {
                 if (!isActive(link.page)) {
-                  ;(e.currentTarget as HTMLButtonElement).style.color = '#9194A8'
+                  ;(e.currentTarget as HTMLButtonElement).style.color = 'var(--color-secondary-foreground)'
                   ;(e.currentTarget as HTMLButtonElement).style.background = 'transparent'
                 }
               }}
@@ -174,7 +174,7 @@ export default function Nav({ currentPage, navigate, darkMode, toggleDark }: Nav
               borderRadius: '8px',
               background: 'rgba(255,255,255,0.05)',
               border: '1px solid rgba(255,255,255,0.08)',
-              color: '#9194A8',
+              color: 'var(--color-secondary-foreground)',
               cursor: 'pointer',
               display: 'flex',
               alignItems: 'center',
@@ -207,7 +207,7 @@ export default function Nav({ currentPage, navigate, darkMode, toggleDark }: Nav
                 ? 'rgba(124,92,252,0.15)'
                 : 'rgba(255,255,255,0.05)',
               border: '1px solid rgba(255,255,255,0.08)',
-              color: '#9194A8',
+              color: 'var(--color-secondary-foreground)',
               cursor: 'pointer',
               flexDirection: 'column',
               alignItems: 'center',
@@ -220,7 +220,7 @@ export default function Nav({ currentPage, navigate, darkMode, toggleDark }: Nav
               style={{
                 width: 16,
                 height: 1.5,
-                background: mobileOpen ? '#A78BFA' : '#9194A8',
+                background: mobileOpen ? '#A78BFA' : 'var(--color-secondary-foreground)',
                 display: 'block',
                 transition: 'all 0.25s ease',
                 transform: mobileOpen ? 'rotate(45deg) translate(4px, 4px)' : 'none',
@@ -231,7 +231,7 @@ export default function Nav({ currentPage, navigate, darkMode, toggleDark }: Nav
               style={{
                 width: 16,
                 height: 1.5,
-                background: mobileOpen ? '#A78BFA' : '#9194A8',
+                background: mobileOpen ? '#A78BFA' : 'var(--color-secondary-foreground)',
                 display: 'block',
                 opacity: mobileOpen ? 0 : 1,
                 transition: 'opacity 0.2s ease',
@@ -242,7 +242,7 @@ export default function Nav({ currentPage, navigate, darkMode, toggleDark }: Nav
               style={{
                 width: 16,
                 height: 1.5,
-                background: mobileOpen ? '#A78BFA' : '#9194A8',
+                background: mobileOpen ? '#A78BFA' : 'var(--color-secondary-foreground)',
                 display: 'block',
                 transition: 'all 0.25s ease',
                 transform: mobileOpen ? 'rotate(-45deg) translate(4px, -4px)' : 'none',
@@ -287,7 +287,7 @@ export default function Nav({ currentPage, navigate, darkMode, toggleDark }: Nav
                   ? 'rgba(124, 92, 252, 0.12)'
                   : 'transparent',
                 border: 'none',
-                color: isActive(link.page) ? '#A78BFA' : '#9194A8',
+                color: isActive(link.page) ? '#A78BFA' : 'var(--color-secondary-foreground)',
                 fontSize: '15px',
                 fontFamily: "'DM Sans', sans-serif",
                 fontWeight: 500,

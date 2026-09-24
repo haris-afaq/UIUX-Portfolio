@@ -78,7 +78,7 @@ export default function Experience({ navigate }: { navigate: NavigateFn }) {
               fontSize: 'clamp(36px, 5vw, 64px)',
               fontWeight: 700,
               fontFamily: "'DM Sans', sans-serif",
-              color: '#EDEEF2',
+              color: 'var(--color-foreground)',
               letterSpacing: '-0.03em',
               lineHeight: 1.1,
               marginTop: '16px',
@@ -101,7 +101,7 @@ export default function Experience({ navigate }: { navigate: NavigateFn }) {
             className={`reveal reveal-delay-2 ${headerVisible ? 'visible' : ''}`}
             style={{
               fontSize: '18px',
-              color: '#9194A8',
+              color: 'var(--color-secondary-foreground)',
               lineHeight: '1.7',
               maxWidth: '560px',
             }}
@@ -150,7 +150,7 @@ export default function Experience({ navigate }: { navigate: NavigateFn }) {
                 <div
                   style={{
                     fontSize: '12px',
-                    color: '#606476',
+                    color: 'var(--color-muted-foreground)',
                     fontFamily: "'JetBrains Mono', monospace",
                     letterSpacing: '0.04em',
                   }}
@@ -172,7 +172,7 @@ export default function Experience({ navigate }: { navigate: NavigateFn }) {
                 fontSize: 'clamp(24px, 3vw, 36px)',
                 fontWeight: 700,
                 fontFamily: "'DM Sans', sans-serif",
-                color: '#EDEEF2',
+                color: 'var(--color-foreground)',
                 letterSpacing: '-0.03em',
               }}
             >
@@ -241,7 +241,7 @@ export default function Experience({ navigate }: { navigate: NavigateFn }) {
                           style={{
                             fontSize: '20px',
                             fontWeight: 700,
-                            color: '#EDEEF2',
+                            color: 'var(--color-foreground)',
                             fontFamily: "'DM Sans', sans-serif",
                             letterSpacing: '-0.02em',
                             marginBottom: '4px',
@@ -276,7 +276,7 @@ export default function Experience({ navigate }: { navigate: NavigateFn }) {
                     <p
                       style={{
                         fontSize: '15px',
-                        color: '#9194A8',
+                        color: 'var(--color-secondary-foreground)',
                         lineHeight: '1.7',
                         marginBottom: '20px',
                       }}
@@ -302,7 +302,7 @@ export default function Experience({ navigate }: { navigate: NavigateFn }) {
                             gap: '10px',
                             alignItems: 'flex-start',
                             fontSize: '14px',
-                            color: '#606476',
+                            color: 'var(--color-muted-foreground)',
                             lineHeight: '1.6',
                           }}
                         >
@@ -362,7 +362,7 @@ export default function Experience({ navigate }: { navigate: NavigateFn }) {
                     fontSize: '24px',
                     fontWeight: 700,
                     fontFamily: "'DM Sans', sans-serif",
-                    color: '#EDEEF2',
+                    color: 'var(--color-foreground)',
                     letterSpacing: '-0.02em',
                   }}
                 >
@@ -383,7 +383,7 @@ export default function Experience({ navigate }: { navigate: NavigateFn }) {
                     style={{
                       fontSize: '18px',
                       fontWeight: 700,
-                      color: '#EDEEF2',
+                      color: 'var(--color-foreground)',
                       fontFamily: "'DM Sans', sans-serif",
                       marginBottom: '4px',
                     }}
@@ -404,14 +404,14 @@ export default function Experience({ navigate }: { navigate: NavigateFn }) {
                   <div
                     style={{
                       fontSize: '12px',
-                      color: '#606476',
+                      color: 'var(--color-muted-foreground)',
                       fontFamily: "'JetBrains Mono', monospace",
                       marginBottom: '12px',
                     }}
                   >
                     {edu.year}
                   </div>
-                  <p style={{ fontSize: '14px', color: '#9194A8', lineHeight: '1.65' }}>
+                  <p style={{ fontSize: '14px', color: 'var(--color-secondary-foreground)', lineHeight: '1.65' }}>
                     {edu.desc}
                   </p>
                 </div>
@@ -429,7 +429,7 @@ export default function Experience({ navigate }: { navigate: NavigateFn }) {
                     fontSize: '24px',
                     fontWeight: 700,
                     fontFamily: "'DM Sans', sans-serif",
-                    color: '#EDEEF2',
+                    color: 'var(--color-foreground)',
                     letterSpacing: '-0.02em',
                   }}
                 >
@@ -476,7 +476,7 @@ export default function Experience({ navigate }: { navigate: NavigateFn }) {
                         style={{
                           fontSize: '14px',
                           fontWeight: 600,
-                          color: '#EDEEF2',
+                          color: 'var(--color-foreground)',
                           fontFamily: "'DM Sans', sans-serif",
                           whiteSpace: 'nowrap',
                           overflow: 'hidden',
@@ -488,7 +488,7 @@ export default function Experience({ navigate }: { navigate: NavigateFn }) {
                       <div
                         style={{
                           fontSize: '12px',
-                          color: '#606476',
+                          color: 'var(--color-muted-foreground)',
                           fontFamily: "'JetBrains Mono', monospace",
                         }}
                       >
@@ -511,14 +511,14 @@ export default function Experience({ navigate }: { navigate: NavigateFn }) {
               fontSize: 'clamp(24px, 3vw, 36px)',
               fontWeight: 700,
               fontFamily: "'DM Sans', sans-serif",
-              color: '#EDEEF2',
+              color: 'var(--color-foreground)',
               letterSpacing: '-0.02em',
               marginBottom: '16px',
             }}
           >
             Let's write the next chapter together.
           </h2>
-          <p style={{ fontSize: '16px', color: '#606476', marginBottom: '28px' }}>
+          <p style={{ fontSize: '16px', color: 'var(--color-muted-foreground)', marginBottom: '28px' }}>
             Open to freelance contracts, consulting engagements, and full-time opportunities.
           </p>
           <div style={{ display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap' }}>

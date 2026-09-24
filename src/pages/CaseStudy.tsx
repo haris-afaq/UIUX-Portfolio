@@ -71,7 +71,7 @@ export default function CaseStudy({ project, navigate }: CaseStudyProps) {
               border: '1px solid rgba(255,255,255,0.12)',
               borderRadius: '100px',
               padding: '8px 16px',
-              color: '#EDEEF2',
+              color: 'var(--color-foreground)',
               fontSize: '13px',
               fontFamily: "'DM Sans', sans-serif",
               fontWeight: 500,
@@ -126,7 +126,7 @@ export default function CaseStudy({ project, navigate }: CaseStudyProps) {
               fontSize: 'clamp(32px, 5vw, 64px)',
               fontWeight: 700,
               fontFamily: "'DM Sans', sans-serif",
-              color: '#EDEEF2',
+              color: 'var(--color-foreground)',
               letterSpacing: '-0.03em',
               lineHeight: 1.1,
               marginBottom: '12px',
@@ -173,7 +173,7 @@ export default function CaseStudy({ project, navigate }: CaseStudyProps) {
                   style={{
                     fontFamily: "'JetBrains Mono', monospace",
                     fontSize: '10px',
-                    color: '#606476',
+                    color: 'var(--color-muted-foreground)',
                     letterSpacing: '0.08em',
                     textTransform: 'uppercase',
                     marginBottom: '6px',
@@ -185,7 +185,7 @@ export default function CaseStudy({ project, navigate }: CaseStudyProps) {
                   style={{
                     fontSize: '14px',
                     fontWeight: 500,
-                    color: '#EDEEF2',
+                    color: 'var(--color-foreground)',
                     fontFamily: "'DM Sans', sans-serif",
                   }}
                 >
@@ -229,7 +229,7 @@ export default function CaseStudy({ project, navigate }: CaseStudyProps) {
                     fontSize: 'clamp(26px, 3vw, 38px)',
                     fontWeight: 700,
                     fontFamily: "'DM Sans', sans-serif",
-                    color: '#EDEEF2',
+                    color: 'var(--color-foreground)',
                     letterSpacing: '-0.03em',
                     lineHeight: 1.15,
                     marginBottom: '20px',
@@ -249,7 +249,7 @@ export default function CaseStudy({ project, navigate }: CaseStudyProps) {
                 <p
                   style={{
                     fontSize: '16px',
-                    color: '#9194A8',
+                    color: 'var(--color-secondary-foreground)',
                     lineHeight: '1.75',
                   }}
                 >
@@ -280,7 +280,7 @@ export default function CaseStudy({ project, navigate }: CaseStudyProps) {
                   >
                     The Challenge
                   </span>
-                  <p style={{ fontSize: '14px', color: '#9194A8', lineHeight: '1.7' }}>
+                  <p style={{ fontSize: '14px', color: 'var(--color-secondary-foreground)', lineHeight: '1.7' }}>
                     {project.challenge}
                   </p>
                 </div>
@@ -298,7 +298,7 @@ export default function CaseStudy({ project, navigate }: CaseStudyProps) {
                   >
                     The Solution
                   </span>
-                  <p style={{ fontSize: '14px', color: '#9194A8', lineHeight: '1.7' }}>
+                  <p style={{ fontSize: '14px', color: 'var(--color-secondary-foreground)', lineHeight: '1.7' }}>
                     {project.solution}
                   </p>
                 </div>
@@ -336,7 +336,7 @@ export default function CaseStudy({ project, navigate }: CaseStudyProps) {
                 fontSize: 'clamp(26px, 3vw, 40px)',
                 fontWeight: 700,
                 fontFamily: "'DM Sans', sans-serif",
-                color: '#EDEEF2',
+                color: 'var(--color-foreground)',
                 letterSpacing: '-0.03em',
               }}
             >
@@ -396,14 +396,14 @@ export default function CaseStudy({ project, navigate }: CaseStudyProps) {
                   style={{
                     fontSize: '15px',
                     fontWeight: 700,
-                    color: '#EDEEF2',
+                    color: 'var(--color-foreground)',
                     fontFamily: "'DM Sans', sans-serif",
                     marginBottom: '8px',
                   }}
                 >
                   {item.title}
                 </h3>
-                <p style={{ fontSize: '13px', color: '#606476', lineHeight: '1.65' }}>
+                <p style={{ fontSize: '13px', color: 'var(--color-muted-foreground)', lineHeight: '1.65' }}>
                   {item.desc}
                 </p>
               </div>
@@ -452,7 +452,7 @@ export default function CaseStudy({ project, navigate }: CaseStudyProps) {
                 fontSize: 'clamp(26px, 3vw, 40px)',
                 fontWeight: 700,
                 fontFamily: "'DM Sans', sans-serif",
-                color: '#EDEEF2',
+                color: 'var(--color-foreground)',
                 letterSpacing: '-0.03em',
               }}
             >
@@ -505,7 +505,7 @@ export default function CaseStudy({ project, navigate }: CaseStudyProps) {
                 <p
                   style={{
                     fontSize: '15px',
-                    color: '#EDEEF2',
+                    color: 'var(--color-foreground)',
                     fontFamily: "'DM Sans', sans-serif",
                     lineHeight: '1.5',
                     fontWeight: 500,

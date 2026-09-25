@@ -81,6 +81,8 @@ export default function Work({ navigate }: { navigate: NavigateFn }) {
             {categories.map((cat) => (
               <button
                 key={cat}
+                className="work-category-filter"
+                data-active={activeCategory === cat}
                 onClick={() => setActiveCategory(cat)}
                 style={{
                   padding: '9px 20px',

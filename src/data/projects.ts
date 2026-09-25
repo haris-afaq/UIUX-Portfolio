@@ -229,30 +229,30 @@ export const projects: Project[] = [
     ],
     role: 'UI/UX Designer',
   },
-  {
-    id: 12,
-    title: 'Loyalink Mobile App',
-    category: 'UI/UX Design',
-    desc: "A cross-platform loyalty platform designed to personalize the customer experience through secure accounts, card linking, and upcoming offers and location-based features.",
-    tags: ['Figma', 'Bloc', 'Clean Code', 'APIs Integration','Push Notifications',],
-    image: loyalinkVideo,
-    video: loyalinkVideo,
-    accent: '#7C5CFC',
-    year: '2026',
-    platform: 'Android, iOS',
-    overview:
-      "Loyalink is a cross-platform loyalty platform focused on delivering a secure and personalized customer experience. The foundation includes phone and email registration, secure login, guest browsing, card linking without storing full card numbers, and mobile and web platform structures. The project is designed to support upcoming offers, location-based features, and future launch requirements.",
-    challenge:
-      "Customers need a simple and personalized way to access loyalty experiences, while businesses require a platform that can securely connect user accounts and payment cards without storing full card numbers. The project also needed a unified foundation across mobile and web platforms to support upcoming offers and location-based features.",
-    solution:
-    "Developed the Loyalink mobile application for iOS and Android, providing users with secure account registration and login using phone or email, guest browsing, and secure bank card linking. The app establishes the core mobile experience for personalized loyalty services while preparing the platform for upcoming offers and location-based features.",
-    results: [
-     "The application provides a seamless and engaging digital Islamic experience, enabling users to strengthen their daily worship through easy access to authentic religious content, interactive features, and a modern, user-friendly interface.",
-     "Url: Due to company policy I can't directly provide project url but once it is published on PlayStore and AppStore I will add the urls here.",
-     "Website: https://loyalink.inara.tech/"
-    ],
-    role: 'UI/UX Designer',
-  },
+  // {
+  //   id: 12,
+  //   title: 'Loyalink Mobile App',
+  //   category: 'UI/UX Design',
+  //   desc: "A cross-platform loyalty platform designed to personalize the customer experience through secure accounts, card linking, and upcoming offers and location-based features.",
+  //   tags: ['Figma', 'Bloc', 'Clean Code', 'APIs Integration','Push Notifications',],
+  //   image: loyalinkVideo,
+  //   video: loyalinkVideo,
+  //   accent: '#7C5CFC',
+  //   year: '2026',
+  //   platform: 'Android, iOS',
+  //   overview:
+  //     "Loyalink is a cross-platform loyalty platform focused on delivering a secure and personalized customer experience. The foundation includes phone and email registration, secure login, guest browsing, card linking without storing full card numbers, and mobile and web platform structures. The project is designed to support upcoming offers, location-based features, and future launch requirements.",
+  //   challenge:
+  //     "Customers need a simple and personalized way to access loyalty experiences, while businesses require a platform that can securely connect user accounts and payment cards without storing full card numbers. The project also needed a unified foundation across mobile and web platforms to support upcoming offers and location-based features.",
+  //   solution:
+  //   "Developed the Loyalink mobile application for iOS and Android, providing users with secure account registration and login using phone or email, guest browsing, and secure bank card linking. The app establishes the core mobile experience for personalized loyalty services while preparing the platform for upcoming offers and location-based features.",
+  //   results: [
+  //    "The application provides a seamless and engaging digital Islamic experience, enabling users to strengthen their daily worship through easy access to authentic religious content, interactive features, and a modern, user-friendly interface.",
+  //    "Url: Due to company policy I can't directly provide project url but once it is published on PlayStore and AppStore I will add the urls here.",
+  //    "Website: https://loyalink.inara.tech/"
+  //   ],
+  //   role: 'UI/UX Designer',
+  // },
 
   {
     id: 13,

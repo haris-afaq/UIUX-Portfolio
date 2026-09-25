@@ -35,6 +35,16 @@
   --color-muted: #EBEBEF;
   --color-muted-foreground: #707484;
   --color-border: rgba(0, 0, 0, 0.07);
+  --color-control-bg: rgba(10, 11, 18, 0.04);
+  --color-control-border: rgba(10, 11, 18, 0.12);
+}
+
+[data-theme='light'] .glass-card {
+  border-color: rgba(10, 11, 18, 0.1);
+}
+
+[data-theme='light'] .tag-pill {
+  border-color: rgba(10, 11, 18, 0.12);
 }
 
 html,
@@ -259,6 +269,29 @@ body {
   cursor: pointer;
   transition: all 0.2s ease;
   white-space: nowrap;
+}
+
+[data-theme='light'] .btn-secondary {
+  background: rgba(10, 11, 18, 0.04);
+  color: var(--color-foreground);
+  border-color: rgba(10, 11, 18, 0.16);
+}
+
+[data-theme='light'] .btn-secondary:hover {
+  background: rgba(10, 11, 18, 0.08);
+  border-color: rgba(10, 11, 18, 0.24);
+}
+
+[data-theme='light'] .work-category-filter:not([data-active='true']) {
+  background: rgba(10, 11, 18, 0.04) !important;
+  border-color: rgba(10, 11, 18, 0.14) !important;
+  color: var(--color-secondary-foreground) !important;
+}
+
+[data-theme='light'] .work-category-filter:not([data-active='true']):hover {
+  background: rgba(10, 11, 18, 0.08) !important;
+  border-color: rgba(124, 92, 252, 0.35) !important;
+  color: var(--color-foreground) !important;
 }
 
 .btn-secondary:hover {

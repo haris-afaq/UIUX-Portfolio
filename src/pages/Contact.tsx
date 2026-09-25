@@ -53,7 +53,7 @@ export default function Contact({ navigate: _navigate }: { navigate: NavigateFn 
       ].join('\n')
     )
 
-    window.location.href = `mailto:harisafaq22@gmail.com?subject=${subject}&body=${body}`
+    window.location.href = `mailto:Maryam.tauheed@inara.pk?subject=${subject}&body=${body}`
     setSending(false)
     setSubmitted(true)
   }
@@ -255,7 +255,7 @@ export default function Contact({ navigate: _navigate }: { navigate: NavigateFn 
                     }}
                   >
                     Your email app should open with the message prefilled for
-                    harisafaq22@gmail.com. Please hit send in your mail client to
+                    Maryam.tauheed@inara.pk. Please hit send in your mail client to
                     deliver it.
                   </p>
                   <button
@@ -296,7 +296,7 @@ export default function Contact({ navigate: _navigate }: { navigate: NavigateFn 
                       <input
                         type="text"
                         required
-                        placeholder="harix afaq"
+                        placeholder="Your name"
                         value={form.name}
                         onChange={(e) => update('name', e.target.value)}
                         onFocus={focusInput}
@@ -309,7 +309,7 @@ export default function Contact({ navigate: _navigate }: { navigate: NavigateFn 
                       <input
                         type="email"
                         required
-                        placeholder="harix@gmail.com"
+                        placeholder="your@example.com"
                         value={form.email}
                         onChange={(e) => update('email', e.target.value)}
                         onFocus={focusInput}
@@ -474,7 +474,7 @@ export default function Contact({ navigate: _navigate }: { navigate: NavigateFn 
                       Email
                     </div>
                     <a
-                      href="mailto:harisafaq22@gmail.com"
+                      href="mailto:Maryam.tauheed@inara.pk"
                       style={{
                         fontSize: '14px',
                         fontWeight: 500,
@@ -490,7 +490,7 @@ export default function Contact({ navigate: _navigate }: { navigate: NavigateFn 
                         ((e.currentTarget as HTMLAnchorElement).style.color = 'var(--color-foreground)')
                       }
                     >
-                      harisafaq22@gmail.com
+                      Maryam.tauheed@inara.pk
                     </a>
                   </div>
                 </div>

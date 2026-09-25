@@ -6,7 +6,7 @@ import medixoVideo from '../assets/medixo_thumbnail.mp4';
 import learnifyVideo from '../assets/learnify_video.mp4';
 import ecomerceWebsiteImage from '../assets/ecommerce_website_mockup.png';
 import noorEislamImage from '../assets/nooreislam.jpg';
-import loyalinkVideo from '../assets/loyalink.mp4';
+// import loyalinkVideo from '../assets/loyalink.mp4';
 import fypVideo from '../assets/fyp_app.mp4';
 import myPortfolioApp from '../assets/myPortfolioApp.mp4';
 import attireCentralVideo from '../assets/attire_central.mp4';

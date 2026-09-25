@@ -47,6 +47,15 @@
   border-color: rgba(10, 11, 18, 0.12);
 }
 
+[data-theme='light'] .contact-field {
+  background: rgba(10, 11, 18, 0.025) !important;
+  border-color: rgba(10, 11, 18, 0.2) !important;
+}
+
+[data-theme='light'] .contact-field::placeholder {
+  color: #707484;
+}
+
 html,
 body {
   background-color: var(--color-background, #08090F);

@@ -4,8 +4,6 @@ import { useInView } from '../hooks/useInView'
 import Section from '../components/Section'
 import type { NavigateFn } from '../App'
 
-const socialLinks: { name: string; icon: string; href: string; color: string }[] = []
-
 const projectTypes = [
   'UI/UX Design',
   'Design System',
@@ -88,7 +86,10 @@ export default function Contact({ navigate: _navigate }: { navigate: NavigateFn 
     ;(e.currentTarget as HTMLElement).style.borderColor = 'rgba(124,92,252,0.5)'
   }
   const blurInput = (e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    ;(e.currentTarget as HTMLElement).style.borderColor = 'rgba(255,255,255,0.08)'
+    const isLight = document.querySelector('[data-theme="light"]') !== null
+    ;(e.currentTarget as HTMLElement).style.borderColor = isLight
+      ? 'rgba(10,11,18,0.2)'
+      : 'rgba(255,255,255,0.08)'
   }
 
   return (
@@ -295,6 +296,7 @@ export default function Contact({ navigate: _navigate }: { navigate: NavigateFn 
                       <label style={labelStyle}>Your Name *</label>
                       <input
                         type="text"
+                        className="contact-field"
                         required
                         placeholder="Your name"
                         value={form.name}
@@ -308,6 +310,7 @@ export default function Contact({ navigate: _navigate }: { navigate: NavigateFn 
                       <label style={labelStyle}>Email Address *</label>
                       <input
                         type="email"
+                        className="contact-field"
                         required
                         placeholder="your@example.com"
                         value={form.email}
@@ -323,6 +326,7 @@ export default function Contact({ navigate: _navigate }: { navigate: NavigateFn 
                   <div style={{ marginBottom: '16px' }}>
                     <label style={labelStyle}>Project Type</label>
                     <select
+                      className="contact-field"
                       value={form.projectType}
                       onChange={(e) => update('projectType', e.target.value)}
                       onFocus={focusInput}
@@ -382,6 +386,7 @@ export default function Contact({ navigate: _navigate }: { navigate: NavigateFn 
                   <div style={{ marginBottom: '24px' }}>
                     <label style={labelStyle}>Your Message *</label>
                     <textarea
+                      className="contact-field"
                       required
                       rows={5}
                       placeholder="Describe your project, timeline, and any specific requirements..."
@@ -534,81 +539,6 @@ export default function Contact({ navigate: _navigate }: { navigate: NavigateFn 
                     </span>
                   </div>
                 </div>
-              </div>
-            </div>
-
-            {/* Social links */}
-            <div className="glass-card" style={{ borderRadius: '16px', padding: '24px' }}>
-              <h3
-                style={{
-                  fontSize: '16px',
-                  fontWeight: 700,
-                  color: 'var(--color-foreground)',
-                  fontFamily: "'DM Sans', sans-serif",
-                  marginBottom: '16px',
-                  letterSpacing: '-0.01em',
-                }}
-              >
-                Find Me Online
-              </h3>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-                {socialLinks.map((s) => (
-                  <a
-                    key={s.name}
-                    href={s.href}
-                    style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: '12px',
-                      padding: '10px 14px',
-                      borderRadius: '10px',
-                      background: 'rgba(255,255,255,0.03)',
-                      border: '1px solid rgba(255,255,255,0.06)',
-                      textDecoration: 'none',
-                      transition: 'all 0.2s ease',
-                    }}
-                    onMouseEnter={(e) => {
-                      ;(e.currentTarget as HTMLAnchorElement).style.background = `${s.color}10`
-                      ;(e.currentTarget as HTMLAnchorElement).style.borderColor = `${s.color}30`
-                    }}
-                    onMouseLeave={(e) => {
-                      ;(e.currentTarget as HTMLAnchorElement).style.background = 'rgba(255,255,255,0.03)'
-                      ;(e.currentTarget as HTMLAnchorElement).style.borderColor = 'rgba(255,255,255,0.06)'
-                    }}
-                  >
-                    <div
-                      style={{
-                        width: 32,
-                        height: 32,
-                        borderRadius: '8px',
-                        background: `${s.color}15`,
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        fontSize: '10px',
-                        fontWeight: 700,
-                        fontFamily: "'JetBrains Mono', monospace",
-                        color: s.color,
-                        flexShrink: 0,
-                      }}
-                    >
-                      {s.icon}
-                    </div>
-                    <span
-                      style={{
-                        fontSize: '14px',
-                        fontWeight: 500,
-                        color: 'var(--color-foreground)',
-                        fontFamily: "'DM Sans', sans-serif",
-                      }}
-                    >
-                      {s.name}
-                    </span>
-                    <span style={{ marginLeft: 'auto', color: 'var(--color-muted-foreground)', fontSize: '12px' }}>
-                      →
-                    </span>
-                  </a>
-                ))}
               </div>
             </div>
 

@@ -448,7 +448,7 @@ export default function Home({ navigate }: { navigate: NavigateFn }) {
                 alignItems: 'center',
               }}
             >
-              {[
+              {/* {[
                 // { label: 'Dribbble', href: '#' },
                 { label: 'Behance', href: 'https://www.behance.net/aarishkhattak' },
               
@@ -473,7 +473,7 @@ export default function Home({ navigate }: { navigate: NavigateFn }) {
                 >
                   {s.label}
                 </a>
-              ))}
+              ))} */}
             </div>
           </div>
 
